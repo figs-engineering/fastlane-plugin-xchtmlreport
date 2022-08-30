@@ -15,7 +15,7 @@ module Fastlane
         result_bundle_paths = params[:result_bundle_paths]
         if result_bundle_path.nil?
           begin
-            result_bundle_path = ::Scan.cache[:result_bundle_path]
+            result_bundle_path = Scan.cache[:result_bundle_path]
           rescue Exception => exception
             raise exception if result_bundle_paths.nil? || result_bundle_paths.empty?
           end
