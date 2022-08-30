@@ -1,4 +1,5 @@
 require 'fastlane/action'
+require 'fastlane/actions/scan'
 require_relative '../helper/xchtmlreport_helper'
 
 module Fastlane
